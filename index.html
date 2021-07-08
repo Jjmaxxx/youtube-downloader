@@ -3,8 +3,13 @@
     <head>
     </head>
     <body>
-        <video width="400px" controls>
-            <source src="myvideo.mp4" type="video/mp4">
+        <form id = "youtubeForm" >
+            <label for="youtubeForm">Insert youtube url:</label>
+            <input type="text" id="url">
+            <input type="submit" value="Submit">
+          </form> 
+        <video id = "videoContainer" width="400px" controls>
+            <source id = "video" src="myvideo.mp4" type="video/mp4">
         </video>
     </body>
 </html>
