@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="index.css"> 
     </head>
     <body>
         <form id = "youtubeForm" >
             <label for="youtubeForm">Insert youtube url:</label>
             <input type="text" id="url">
-            <input type="submit" value="Submit">
-          </form> 
-        <video id = "videoContainer" width="400px" controls>
+            <select name="quality" id="quality">
+
+            </select>
+            <!-- <input type="submit" value="Submit"> -->
+          </form>
+        <div id = "afterGetInfo" style = "display:none" >
+            <label for="inputName">Input Name:</label>
+            <input type ="text" id = "name" name = "inputName">
+            <br></br>
+            <button id="doneButton">Done</button>
+        </div>
+        <video style = "display:none" id = "videoContainer" width="400px" controls>
             <source id = "video" src="myvideo.mp4" type="video/mp4">
         </video>
+        <p id= "songPlaying"></p>
     </body>
 </html>
