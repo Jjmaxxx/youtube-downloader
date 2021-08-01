@@ -7,7 +7,11 @@
         <form id = "youtubeForm" >
             <label for="youtubeForm">Insert youtube url:</label>
             <input type="text" id="url">
-            <select name="quality" id="quality">
+            <select id = "mp4ormp3" style = "display: none">
+                <option value = "mp3">mp3</option>
+                <option value = "mp4">mp4</option>
+            </select> 
+            <select name="quality" id="quality" style = "display:none">
 
             </select>
             <!-- <input type="submit" value="Submit"> -->
@@ -18,6 +22,9 @@
             <br></br>
             <button id="doneButton">Done</button>
         </div>
+        <audio style = "display:none" id = "audioContainer" controls>
+            <source id = "audio" src="myaudio.mp3" type="audio/mp3">
+        </audio>
         <video style = "display:none" id = "videoContainer" width="400px" controls>
             <source id = "video" src="myvideo.mp4" type="video/mp4">
         </video>
